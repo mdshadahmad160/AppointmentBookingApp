@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: patient-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/PATIENT_DB
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+    hibernate:
+      ddl-auto: update
